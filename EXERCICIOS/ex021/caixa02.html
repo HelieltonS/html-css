@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body {
+            background-color: #7d7d7d;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px
+        }
+
+        article {
+            background-color: #b2b2b2;
+        }
+
+        article > aside {
+            background-color: #7d7d7d;
+        }
+
+        nav {
+            background-color: #7d7d7d;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.722);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vitae reprehenderit doloribus illo inventore consectetur ex molestiae nostrum velit aut, quaerat voluptate officiis consequatur incidunt dignissimos sint quasi culpa quidem.</p>
+                <aside>
+                    <p>Artigo de alguém ai</p>
+                </aside>
+            </article>
+            <article>
+                <aside>
+
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Helielton</p>
+    </footer>
+</body>
+</html>
